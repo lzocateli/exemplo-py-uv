@@ -1,0 +1,15 @@
+
+[tool.uv]
+name = "frontend"
+version = "0.1.0"
+description = "Frontend service using Streamlit"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.uv.dependencies]
+streamlit = "^1.3.0"
+azure-identity = "^1.7.0"
+msal = "^1.17.0"
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"

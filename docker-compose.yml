@@ -1,0 +1,27 @@
+
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: backend_service
+    environment:
+      - KEY_VAULT_NAME=${KEY_VAULT_NAME}
+      - AZURE_CLIENT_ID=${AZURE_CLIENT_ID}
+      - AZURE_TENANT_ID=${AZURE_TENANT_ID}
+      - AZURE_CLIENT_SECRET=${AZURE_CLIENT_SECRET}
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build: ./frontend
+    container_name: frontend_service
+    environment:
+      - KEY_VAULT_NAME=${KEY_VAULT_NAME}
+      - AZURE_CLIENT_ID=${AZAZURE_CLIENT_ID}
+      - AZURE_TENANT_ID=${AZURE_TENANT_ID}
+      - AZURE_CLIENT_SECRET=${AZURE_CLIENT_SECRET}
+    ports:
+      - "8501:8501"
+    command: streamlit run app/main.py
