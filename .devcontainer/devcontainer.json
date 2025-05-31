@@ -23,6 +23,7 @@
 		"HTTPS_PROXY": "${localEnv:HTTPS_PROXY}",
 		"NO_PROXY": "cat.com"
 	},
+	"onCreateCommand": "chmod +x .devcontainer/custom-install.sh && chmod +x .devcontainer/.zshrc",
 	"postCreateCommand": "./.devcontainer/custom-install.sh",
 
 	"customizations": {
@@ -32,7 +33,7 @@
 				"terminal.integrated.defaultProfile.linux": "zsh"
 			},
 			"extensions": [
-				"george-alisson.html-preview-vscod",
+				"george-alisson.html-preview-vscode",
 				"ms-vscode.azurecli",
 				"ms-vscode.vscode-node-azure-pack",
 				"ms-vscode-remote.vscode-remote-extensionpack",

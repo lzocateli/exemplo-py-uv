@@ -1,4 +1,4 @@
-FROM cat-docker.artifacts.cat.com/cat_brazil-jfrog/infra/devops:3.12-bookworm
+FROM lzocateli/devops:3.12-bookworm
 
 ENV HTTP_PROXY=http://proxy.cat.com:80
 ENV HTTPS_PROXY=http://proxy.cat.com:80
