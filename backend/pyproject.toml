@@ -1,0 +1,16 @@
+
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Backend service using FastAPI"
+authors = [{ name = "Lincoln Zocateli", email = "lincoln@zocate.li"} ]
+
+[tool.uv.dependencies]
+fastapi = "^0.78.0"
+uvicorn = "^0.17.0"
+azure-identity = "^1.7.0"
+msal = "^1.17.0"
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"

@@ -1,0 +1,16 @@
+
+[project]
+name = "frontend"
+version = "0.1.0"
+description = "Frontend service using Streamlit"
+authors = [{ name = "Lincoln Zocateli", email = "lincoln@zocate.li"} ]
+dependencies = [
+    "streamlit>=1.3.0,<2.0.0",
+    "azure-identity>=1.7.0,<2.0.0",
+    "msal>=1.17.0,<2.0.0"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+

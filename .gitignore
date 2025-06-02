@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ef29be (Projeto inicial)
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -8,6 +12,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+<<<<<<< HEAD
 build/
 develop-eggs/
 dist/
@@ -31,6 +36,15 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+=======
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.uv/
+.uv.lock
+>>>>>>> 6ef29be (Projeto inicial)
 
 # Installer logs
 pip-log.txt
@@ -46,7 +60,10 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
+<<<<<<< HEAD
 *.py,cover
+=======
+>>>>>>> 6ef29be (Projeto inicial)
 .hypothesis/
 .pytest_cache/
 cover/
@@ -59,7 +76,10 @@ cover/
 *.log
 local_settings.py
 db.sqlite3
+<<<<<<< HEAD
 db.sqlite3-journal
+=======
+>>>>>>> 6ef29be (Projeto inicial)
 
 # Flask stuff:
 instance/
@@ -98,7 +118,7 @@ ipython_config.py
 #   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.
-#uv.lock
+uv.lock
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
